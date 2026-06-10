@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <title>화곡 셔츠룸 블로그 | 마포 성우이벤트 브로의 찐 후기</title>
+    <meta name="description" content="마포 성우이벤트 직영 화곡 셔츠룸 브로가 전하는 찐한 분위기와 서비스 이야기. 예약은 010-6279-0862, 오늘도 빡시게 놀아보자고">
+    <meta name="keywords" content="화곡 셔츠룸, 마포 셔츠룸, 성우이벤트, 화곡, 셔츠룸 추천, 마포 유흥, 브로 후기">
+    <meta name="author" content="성우이벤트">
+    <link rel="canonical" href="https://sf-t3-1779642675702-338.vercel.app/blog">
+    <meta property="og:title" content="화곡 셔츠룸 블로그 | 마포 성우이벤트 브로의 찐 후기">
+    <meta property="og:description" content="마포 성우이벤트 직영 화곡 셔츠룸 브로가 전하는 찐한 분위기와 서비스 이야기. 예약은 010-6279-0862">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #2a2a2a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+            position: relative;
+            padding: 20px;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(0deg, rgba(0,0,0,0.3) 0px, rgba(0,0,0,0.3) 2px, transparent 2px, transparent 4px);
+            pointer-events: none;
+            z-index: 0;
+        }
+        a {
+            color: #ff6b35;
+            text-decoration: none;
+            border-bottom: 2px solid #ff6b35;
+            transition: all 0.2s;
+        }
+        a:hover {
+            color: #fff;
+            background: #ff6b35;
+            border-bottom-color: #fff;
+        }
+        header {
+            background: #1a1a1a;
+            padding: 20px;
+            border: 3px solid #ff6b35;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ff6b35;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            border: 2px solid #ff6b35;
+            padding: 10px;
+        }
+        .logo span {
+            display: block;
+            font-size: 0.6rem;
+            color: #ccc;
+            letter-spacing: 1px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: #e0e0e0;
+            border-bottom: 2px solid transparent;
+            padding: 5px 0;
+            font-size: 0.9rem;
+        }
+        nav a:hover {
+            border-bottom-color: #ff6b35;
+            background: transparent;
+            color: #ff6b35;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger span {
+            width: 30px;
+            height: 4px;
+            background: #ff6b35;
+            border-radius: 2px;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .logo {
+                font-size: 1.5rem;
+                padding: 8px;
+            }
+            nav {
+                display: none;
+                flex-direction: column;
+                background: #1a1a1a;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: 0;
+                padding: 20px;
+                border: 2px solid #ff6b35;
+                z-index: 10;
+            }
+            nav.active {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+            header {
+                flex-wrap: wrap;
+                position: relative;
+            }
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        .blog-post {
+            background: #1a1a1a;
+            border: 2px solid #ff6b35;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+        .blog-post h1 {
+            font-size: 2rem;
+            color: #ff6b35;
+            border-left: 5px solid #ff6b35;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+        .blog-post .meta {
+            font-size: 0.8rem;
+            color: #888;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+        .blog-post p {
+            margin-bottom: 20px;
+        }
+        .blog-post .highlight {
+            background: #ff6b35;
+            color: #1a1a1a;
+            padding: 10px;
+            font-weight: bold;
+            margin: 20px 0;
+            border: 2px solid #e0e0e0;
+        }
+        .blog-post .cta {
+            background: #333;
+            padding: 15px;
+            border: 2px dashed #ff6b35;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.2rem;
+        }
+        .blog-post .cta a {
+            font-size: 1.3rem;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid #ff6b35;
+            margin-top: 40px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            성우이벤트
+            <span>화곡 셔츠룸 · 마포 직영</span>
+        </div>
+        <nav>
+            <a href="/">홈</a>
+            <a href="/about">소개</a>
+            <a href="/services">서비스</a>
+            <a href="/blog">블로그</a>
+            <a href="/contact">연락처</a>
+        </nav>
+        <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="blog-post">
+            <h1>화곡 셔츠룸에서 찐으로 놀아본 브로의 후기</h1>
+            <div class="meta">2025.04.15 | 작성자: 성우이벤트 브로 | 조회 1,247</div>
+            
+            <p>야, 브로들아. 오늘은 내가 직접 경험한 <strong>화곡 셔츠룸</strong> 이야기를 풀어볼게. 사실 나도 처음엔 좀 긴장했어. "셔츠룸이 뭐야? 그냥 술 마시는 곳 아냐?" 이렇게 생각했거든. 근데 막상 가보니까 완전 다른 세상이었어.</p>
+
+            <p>내가 간 곳은 <strong>마포 성우이벤트 직영 화곡 셔츠룸</strong>이야. 위치는 화곡동 쪽인데, 찾기도 쉬웠어. 들어가자마자 느껴지는 분위기가 바로 찐이었어. 조명은 은은하고, 인테리어는 깔끔하면서도 뭔가 센스가 있어. 그리고 무엇보다 스태프들이 진짜 친절해. "브로, 오늘 뭐 마실래?" 이렇게 편하게 말 걸어주니까 부담 제로야.</p>
+
+            <div class="highlight">
+                👍 찐 포인트: 마포 성우이벤트 직영이라 서비스 퀄리티가 다르다! 예약은 010-6279-0862로 바로!
+            </div>
+
+            <p>자, 이제 본격적으로 후기를 써볼게. 나는 평소에 스트레스 받으면 친구들이랑 가끔 술 한잔 하면서 푸는 스타일이야. 근데 화곡 셔츠룸은 그냥 술 마시는 곳이 아니더라고. <strong>분위기, 서비스, 그리고 사람들</strong>까지 모든 게 조화를 이뤄. 내가 간 날은 평일 저녁이었는데도 자리가 꽤 차 있었어. 역시 인기 있는 곳은 다르구나 싶었지.</p>
+
+            <p>가장 인상 깊었던 건 <strong>성우이벤트</strong> 시스템이야. 처음엔 "성우이벤트가 뭐지?" 했는데, 설명 들으니까 바로 이해됐어. 이벤트 시간마다 분위기가 확 바뀌고, 게임도 하고, 스태프들이랑 같이 즐길 수 있어. 나도 덩달아 신나서 평소에 안 하던 게임까지 했어. ㅋㅋㅋ 결과는? 내가 져서 술 샀지. 그래도 기분은 최고였어.</p>
+
+            <p>그리고 <strong>마포 셔츠룸</strong> 중에서도 화곡 지점은 특히 분위기가 좋다고 하더라고. 내가 가본 다른 곳들보다 인테리어나 청결 상태가 훨씬 좋았어. 화장실도 깨끗하고, 소파도 편하고. 진짜 디테일 하나하나 신경 쓴 게 느껴졌어.</p>
+
+            <div class="cta">
+                🔥 지금 바로 예약하고 찐 분위기 경험하자!<br>
+                <a href="tel:010-6279-0862">📞 010-6279-0862</a>
+            </div>
+
+            <p>혹시 <strong>화곡 셔츠룸 추천</strong> 받고 싶은 사람들을 위해 꿀팁 하나 줄게. 처음 가는 사람들은 <strong>성우이벤트 패키지</strong>를 추천해. 가성비도 좋고, 이것저것 서비스가 많이 포함되어 있어서 알차게 즐길 수 있어. 나도 다음에 갈 때는 패키지로 예약할 생각이야.</p>
+
+            <p>마지막으로, <strong>마포 유흥</strong>을 진지하게 즐기고 싶은 브로들이 있다면 화곡 셔츠룸 완전 추천해. 혼자 가도 되고, 친구들이랑 가도 되고. 스태프들이 다 친근하게 대해주니까 부담 없이 즐길 수 있어. 나도 다음 주에 또 가려고 벌써 약속 잡았어. ㅋㅋㅋ</p>
+
+            <p>그럼 오늘도 빡시게 놀고, 다음에 또 찐 후기 남길게. 문의는 <a href="tel:010-6279-0862">010-6279-0862</a>로 바로 연락해. 브로가 기다리고 있을게!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 성우이벤트 · 화곡 셔츠룸 · 마포 직영 · 문의 010-6279-0862</p>
+        <p style="font-size:0.8rem; margin-top:10px;">주소: 서울특별시 강서구 화곡동 · 영업시간: 20:00 ~ 06:00</p>
+    </footer>
+
+    <script>
+        // 모바일 메뉴 토글
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
